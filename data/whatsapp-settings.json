@@ -1,0 +1,24 @@
+{
+  "apiSettings": {
+    "accessToken": "EAAbtJy9AaE4BPJ9IpBEm6kO0o3xsAn3G2gAyicf4f0YWLKpfBDIfSyv68BZCwaSkPLVA97yZCf7iD4KZAuIvpmzUHuGgMDJpyciAQ7zAJ48ywhjRQfnDaJg2THXIZC3bGNd9ZATXySlW4rLbbIc4J2ODr7zh8KAcqyjjZCHZCZA3JuUePKjBVVvCVpsjAwJxcBaveyupdaqvWjkshyZA7emkcCo8HekV319TXsAUZAzFWFwtsZD",
+    "phoneNumberId": "701854336351792",
+    "businessAccountId": "1838661157003509",
+    "apiBaseUrl": "https://graph.facebook.com/v22.0",
+    "webhookUrl": "https://your-domain.com/api/whatsapp/webhook",
+    "verifyToken": "TAJ_ELECTRONICS_2025"
+  },
+  "notificationSettings": {
+    "enableIncomingMessages": true,
+    "enableDeliveryReports": true,
+    "enableReadReceipts": true,
+    "enableAutoReply": true,
+    "autoReplyMessage": "Thank you for your message. We'll get back to you soon!"
+  },
+  "templateSettings": {
+    "receiptTemplateName": "receipt_created",
+    "receiptTemplateLanguage": "en",
+    "receiptTemplateParamsOrder": "customerName,receiptNumber,trackingUrl"
+  },
+  "templateUsage": {},
+  "lastUpdated": "2025-08-09T17:37:10.985Z"
+}

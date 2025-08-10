@@ -1,0 +1,102 @@
+/* Thermal Printer Specific CSS */
+
+@page {
+  size: 80mm auto;
+  margin: 0mm;
+}
+
+body {
+  font-family: 'Courier New', monospace !important;
+  margin: 0 !important;
+  padding: 2mm !important;
+  font-size: 11px !important;
+  line-height: 1.2 !important;
+  width: 76mm !important;
+  color: #000 !important;
+  background: #fff !important;
+}
+
+.receipt-content {
+  width: 100% !important;
+  max-width: 76mm !important;
+}
+
+.center {
+  text-align: center !important;
+  margin: 1mm 0 !important;
+}
+
+.bold {
+  font-weight: bold !important;
+}
+
+.border-dashed {
+  border-bottom: 1px dashed #000 !important;
+  margin: 2mm 0 !important;
+  padding-bottom: 2mm !important;
+}
+
+.flex {
+  display: flex !important;
+  justify-content: space-between !important;
+  margin: 0.5mm 0 !important;
+  align-items: flex-start !important;
+}
+
+.flex span:first-child {
+  flex-shrink: 0 !important;
+  margin-right: 2mm !important;
+}
+
+.flex span:last-child {
+  text-align: right !important;
+  word-break: break-word !important;
+}
+
+.problem-text {
+  white-space: pre-wrap !important;
+  word-break: break-word !important;
+  margin-top: 1mm !important;
+}
+
+/* Hide all non-essential elements for thermal printing */
+.no-print {
+  display: none !important;
+}
+
+/* Ensure text is always black */
+* {
+  color: #000 !important;
+  background: transparent !important;
+}
+
+/* Thermal printer specific adjustments */
+h1, h2, h3, h4, h5, h6 {
+  margin: 1mm 0 !important;
+  padding: 0 !important;
+}
+
+p {
+  margin: 0.5mm 0 !important;
+  padding: 0 !important;
+}
+
+@media print {
+  body {
+    margin: 0 !important;
+    padding: 2mm !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  
+  .receipt-content {
+    page-break-inside: avoid !important;
+  }
+  
+  /* Force black text for thermal printers */
+  * {
+    color: #000 !important;
+    background: #fff !important;
+    text-shadow: none !important;
+  }
+}
